@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { AppBar, IconButton, List, ListItem, ListItemIcon, Toolbar } from "@material-ui/core";
 // import {useMediaQuery} from '@material-ui/core';
-import logo from "../../Img/Logo/lp.jpg";
+import logo from "../../Img/Logo/lp.png";
 import { makeStyles } from "@material-ui/styles";
 import { Avatar } from "@material-ui/core";
 import EmojiObjectsTwoTone from "@material-ui/icons/EmojiObjectsTwoTone";

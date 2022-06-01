@@ -42,30 +42,23 @@ const About = ({title , dark, id , fondo}) => {
               text= "También, soy Licenciada en Comunicación Social. Disfruto de los desafíos y de aprender constantemente, . "
               color ="secondary"
 
-              />
-             
-            </CardContent>
-            <CardActions>
-               <Button
-                  
+              />  <Button
                   className={classes.botonpdf}
-                  color= "primary"
+                  variant="outlined"
+                  color= "secondary"
                 >    <a href = { pdf } dowload>
                 Download CV
                 </a>
                 </Button>
+             
+            </CardContent>
+            <CardActions>
             
             </CardActions>
-
-         
-        </Card>
-        {/* <Typography variant='h5' aling= "center">
-          Hola! Mi nombre es Romina Morton Degado
-        </Typography>
-        <Typography variant='h5' aling= "center">
-          y soy FullStack Developer.
-        </Typography> */}
-
+            </Card>
+            
+            
+     
       </div>
     </div>
   )
@@ -117,16 +110,16 @@ const useStyle = makeStyles ((theme) => ({
   },
   
   botonpdf:{
-    position:"relative",
-    top: "32vh",
+    position:"sticky",
+    top: "60vh",
     bottom:"1,5 rem",
     right:"15rem",
     [theme.breakpoints.down("sm")]:{
         bottom: 10,
         
     },
-    backgroundColor:"#413F42",
-    border: "#F73D93",
+    backgroundColor:"#570A57",
+    border: "#570A57",
     height:"10vh",
     "& a":{
       color: "#7F8487",

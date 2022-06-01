@@ -20,90 +20,61 @@ const Contacto = ({title , dark, id}) => {
     });
   }
   return (
-    <div >
-      <h1>Contact Us</h1>
-      <form className='form.email' onSubmit={sendEmail}>
+      
+    <div className={`${classes.section} ${dark && classes.sectiondark}`}>
+        <Typography variant='h3'>
+          {title}
+        </Typography>   
+           <div className={ classes.sectioncontent} id={id}>
+
+        <Paper className={classes.root}>
+          <div className={classes.titleandChoice}>
+          <Typography variant='h5'>
+            Contacto
+        </Typography>
+        <div className={classes.choice}>
+          <span>Feed-Back</span>
+          <Radio
+          value= "Hola!"
+          checked={value ==="Hola!"}
+          color="primary"
+          onChange={handlerChange}
+          />
+           <span>Sos IT- Recruiter</span>
+          <Radio
+          value= "Te Gusrtaría Contactar?"
+          checked={value ==="Te Gusrtaría Contactar?"}
+          color="secundary"
+          onChange={handlerChange}
+          />
+        </div>
+          </div>
+      <form className={classes.form} onSubmit={sendEmail}>
         <label>name</label>
         <input type="text" name="user_name"></input>
-        <hr />
+        <br/>
 
         <label>e-mail</label>
         <input type="text" name="user_email"></input>
-        <hr />
+        <br/>
 
         <label>Mensaje</label>
         <input type="text" name="user_message"></input>
-        <hr />
-      <button>enviar</button>
+        <br/>
+
+      <button type='submit' className='button'>Enviar</button>
       </form>
+         
+
+        {/* <Button variant = "button"
+                  color="secondary"
+                  className={classes.button}
+                >   Enviar
+                </Button> */}
+        </Paper>
+
+      </div>
     </div>
-    // <div className={`${classes.section} ${dark && classes.sectiondark}`}>
-    //     <Typography variant='h3'>
-    //       {title}
-    //     </Typography>   
-    //        <div className={ classes.sectioncontent} id={id}>
-
-    //     <Paper className={classes.root}>
-    //       <div className={classes.titleandChoice}>
-    //       <Typography variant='h5'>
-    //         Contacto
-    //     </Typography>
-    //     <div className={classes.choice}>
-    //       <span>Feed-Back</span>
-    //       <Radio
-    //       value= "Hola!"
-    //       checked={value ==="Hola!"}
-    //       color="primary"
-    //       onChange={handlerChange}
-    //       />
-    //        <span>Sos IT- Recruiter</span>
-    //       <Radio
-    //       value= "Te Gusrtaría Contactar?"
-    //       checked={value ==="Te Gusrtaría Contactar?"}
-    //       color="secundary"
-    //       onChange={handlerChange}
-    //       />
-    //     </div>
-    //       </div>
-    //     <form className={classes.form} 
-    //     autoComplete="off" alignContent= "center"
-    //     onSubmit={sendEmail}
-    //     >
-    //       <TextField label= "Ingrese su Nombre"
-    //       name= "user_name"
-    //       /> 
-                
-    //       <TextField label= "Ingrese su e-mail"
-    //       name= "user_email"
-    //       />
-    //       {
-    //         value === "Te Gusrtaría Contactar?" ? (
-    //           <>
-    //           <TextField label= "Nombre de la empresa"/>   
-       
-    //           </>
-    //         ): null
-    //       }
-    //       <TextField label= "Asunto"/>
-    //       <TextField label= "Ingesa tu mensaje"
-    //       name ="msg"/>
-
-
-
-    //     </form>
-    //       <button type='submit' className='button' >
-    //         Enviar
-    //       </button>
-
-    //     {/* <Button variant = "button"
-    //               color="secondary"
-    //               className={classes.button}
-    //             >   Enviar
-    //             </Button> */}
-    //     </Paper>
-
-    //   </div>
-    // </div>
   )
 }
 const useStyle = makeStyles ((theme) => ({
@@ -136,6 +107,7 @@ const useStyle = makeStyles ((theme) => ({
 
   },
   form:{
+    textDecoration:"none",
     display:"block",
 
   },

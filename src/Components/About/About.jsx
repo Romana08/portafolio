@@ -24,17 +24,17 @@ const About = ({title , dark, id , fondo}) => {
              className = {classes.name}
               text= "Hola Mi nombre es Romina Morton"
               textStyle = {{ fontSize :"2rem", fontWeight: "700p", color: "#F73D93", aling: "center"}}
-              startDelay={100}
-              cursorColor= "black"
-              typeSpeed ={100}
+              // startDelay={100}
+              // cursorColor= "black"
+              // typeSpeed ={100}
               />
                <TypeWriteEffect
              className = {classes.slogan}
               text= "Soy FullStack Developer"
               textStyle = {{ fontSize :"1.3rem", fontWeight: "500px",  }}
-              startDelay={2500}
-              cursorColor= "black"
-              typeSpeed ={100}
+              // startDelay={2500}
+              // cursorColor= "black"
+              // typeSpeed ={100}
               />
               <TypeWriteEffect
               variant ="h6"
@@ -49,6 +49,7 @@ const About = ({title , dark, id , fondo}) => {
                <Button
                   
                   className={classes.botonpdf}
+                  color= "primary"
                 >    <a href = { pdf } dowload>
                 Download CV
                 </a>
@@ -92,7 +93,7 @@ const useStyle = makeStyles ((theme) => ({
     height:"80vh",
     display:"flex",
     marginTop: "6px",
-    position:"absolute",
+    position:"sticky",
   },
   media:{
     borderRadius:"10px",

@@ -4,15 +4,19 @@ import foto from "../../Img/Logo/foto.jpeg";
 import TypeWriteEffect from "react-typewriter-effect";
 import  Button from '@material-ui/core/Button';
 import pdf from "../../Img/cv.pdf"
-const About = ({title , dark, id}) => {
+import Skills from '../Skills/Skills';
+
+
+const About = ({title , dark, id , fondo}) => {
   const classes = useStyle();
+   
   return (
-    <div className={`${classes.section} ${dark && classes.sectiondark}`}>
+    <div className={`${classes.section} ${fondo && classes.sectiondark}`}>
       <div className={ classes.selectioncontent} id={id}>
         <Typography variant='h3' aling= "center">
           {title}
         </Typography>
-        <Card className={classes.card}>
+        <Card className={classes.card} >
           <CardMedia image = {foto } className={classes.media} title="picture"/>
           <CardContent className={classes.cardcontenido}>
 
@@ -43,9 +47,7 @@ const About = ({title , dark, id}) => {
             </CardContent>
             <CardActions>
                <Button
-                  href="mailto:address@email.com"
-                  variant="outlined"
-                  color="secondary"
+                  
                   className={classes.botonpdf}
                 >    <a href = { pdf } dowload>
                 Download CV
@@ -68,12 +70,18 @@ const About = ({title , dark, id}) => {
   )
 }
 const useStyle = makeStyles ((theme) => ({
-  section:{
-    minHeight: "100vh",
+
+  section: {
+      // minHeight: "100vh",
+      height: "90vh",
+      backgroundImage: "url(https://images.unsplash.com/photo-1574610758891-5b809b6e6e2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1512&q=80)",
+      backgroundSize: "cover",
+      backgroundPosition:"center"
 
   },
   sectiondark:{
-    background : "#7F8487",
+    background : "#424547",
+    opacity: "60%",
     color : "#fff",
   },
   selectioncontent:{
@@ -103,6 +111,7 @@ const useStyle = makeStyles ((theme) => ({
     },
   },
   name:{
+    fontFamily:'Arvo',
     alignContent: "justify"
   },
   

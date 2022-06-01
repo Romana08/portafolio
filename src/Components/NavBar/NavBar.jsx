@@ -23,7 +23,7 @@ const NavBar = () => {
   const [open, setOpen] = useState(false);
   const links = [
     {
-      id: "about",
+      id: "Sobre Mi",
       text: "Sobre Mi",
       className: "MiAvatar",
       icon: <Avatar alt="Remy Sharp" src={foto} 
@@ -48,10 +48,10 @@ const NavBar = () => {
     },
   ];
   return (
-    <> <Paper className={classes.paper}>
-      <AppBar position="sticky" className={classes.root}>
+    <> 
+      <AppBar position ="fixed" className={classes.root}>
+    <Paper className={classes.paper}>
         <Container maxWhidth="md">
-       
           <Toolbar className={classes.toolsbar}>
             <Hidden xsDown>
               <img src={logo} alt="Logo" className={classes.logo} />
@@ -124,8 +124,8 @@ const NavBar = () => {
                    
         </SwipeableDrawer>
         
-      </AppBar>
       </Paper>
+      </AppBar>
     </>
   );
 };
@@ -137,30 +137,32 @@ const useStyle = makeStyles((theme) => ({
   },
   root: {
     backgroundColor: "#16003B",
-    top: 0,
-    left: 0,
-    right: 0,
-    zIndex: 999,
+    // top: 0,
+    // left: 0,
+    // right: 0,
+    // zIndex: 999,
+    // fontFamily: ""
 
 
   },
   toolsbar: {
     display: "flex",
     justifyContent: "flex-start",
-    alignContent: "center",
+    alignItems: "center",
   },
   logo: {
-    height: "1.5rem",
+    height: "3.5rem",
     objectFit: "contain",
     "&:hover": {
-      cursor: "poitner",
+      cursor: "pointer",
     },
   },
   skills:{
     color:"#F73D93"
   },
+  
   menu: {
-    "& a": {
+       "& a": {
       color: "#333",
       fontSize: "1.4 rem",
       fontWeight: "bold",

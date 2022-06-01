@@ -14,6 +14,7 @@ const Contacto = ({title , dark, id}) => {
     e.preventDefault();
     emailjs.sendForm('service_yon0e5h', 'template_skyclrm',  e.target ,'jeL9FmSXfeaZuDJUJ')
     .then(function(response) {
+      alert("Su mensaje fue enviado con exito")
        console.log('SUCCESS!', response.status, response.text);
     }, function(error) {
        console.log('FAILED...', error);

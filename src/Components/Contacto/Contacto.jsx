@@ -64,7 +64,7 @@ const useStyle = makeStyles ((theme) => ({
     minHeight: "100vh",
     display:"flex",
      flexDirection:"column",
-  //  justifyContent:"flex-start",
+  justifyContent:"flex-start",
     alignContent:"center",
   },
   root:{
@@ -96,12 +96,9 @@ const useStyle = makeStyles ((theme) => ({
     display:"block",
     color: "#040303",
     [theme.breakpoints.down("sm")]:{
-      display: "block",
+      display: "flex",
       alignContent:"center",
-     margin: "2vh",
-     marginLeft:"3vh",
-     alignItems: "center",
-     maxWidth: "2vh",
+    
     },
   },
   sectiondark:{

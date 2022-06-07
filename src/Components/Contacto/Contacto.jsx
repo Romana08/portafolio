@@ -1,14 +1,11 @@
-import React, { useState } from 'react';
-import { Button, makeStyles, Paper, Radio, TextField, Typography } from '@material-ui/core';
+import React from 'react';
+import { makeStyles, Paper, Typography } from '@material-ui/core';
 import emailjs from "@emailjs/browser";
+import Redes from './Redes';
+
 
 const Contacto = ({title , dark, id}) => {
   const classes = useStyle();
-  const [value, setValue]= useState("Hola!");
-
-  const handlerChange = (e)=>{
-    setValue(e.target.value)
-  }
 
   const sendEmail = (e) =>{
     e.preventDefault();
@@ -22,60 +19,43 @@ const Contacto = ({title , dark, id}) => {
   }
   return (
       
-    <div className={`${classes.section} ${dark && classes.sectiondark}`}>
-        <Typography variant='h3'>
+          <div className={`${classes.section} ${dark && classes.sectiondark}`}>
+    <Typography variant='h3'>
           {title}
-        </Typography>   
+        </Typography>  
            <div className={ classes.sectioncontent} id={id}>
-
-        <Paper className={classes.root}>
-          <div className={classes.titleandChoice}>
+             
+         
+        <Paper className={classes.root} maxWhidth="md">
           <Typography variant='h5'>
-            Contacto
-        </Typography>
-        <div className={classes.choice}>
-          <span>Feed-Back</span>
-          <Radio
-          value= "Hola!"
-          checked={value ==="Hola!"}
-          color="primary"
-          onChange={handlerChange}
-          />
-           <span>Sos IT- Recruiter</span>
-          <Radio
-          value= "Te Gusrtaría Contactar?"
-          checked={value ==="Te Gusrtaría Contactar?"}
-          color="secundary"
-          onChange={handlerChange}
-          />
-        </div>
-          </div>
+            Contactame
+        <Redes className= {classes.redes}>
+
+        </Redes>
+      
       <form className={classes.form} onSubmit={sendEmail}>
-        <label>name</label>
-        <input type="text" name="user_name"></input>
+        <label>Name</label>
+        <input type="text" name="user_name" className={classes.input}></input>
         <br/>
 
         <label>e-mail</label>
-        <input type="text" name="user_email"></input>
+        <input type="text" name="user_email" className= {classes.input}></input>
+        <br/>
+        <label>Asunto</label>
+        <input type="text" name="user_name" className={classes.inputA}></input>
         <br/>
 
         <label>Mensaje</label>
-        <input type="text" name="user_message"></input>
+        <input type="text" name="user_message" className={classes.inputM}></input>
         <br/>
 
-      <button type='submit' className='button'>Enviar</button>
+      <button type='submit' className={classes.boton}>Enviar</button>
       </form>
-         
-
-        {/* <Button variant = "button"
-                  color="secondary"
-                  className={classes.button}
-                >   Enviar
-                </Button> */}
+        </Typography>
         </Paper>
-
       </div>
-    </div>
+      </div>
+    
   )
 }
 const useStyle = makeStyles ((theme) => ({
@@ -83,18 +63,22 @@ const useStyle = makeStyles ((theme) => ({
   section:{
     minHeight: "100vh",
     display:"flex",
-    flexDirection:"column",
-    justifyContent:"flex-start",
+     flexDirection:"column",
+  //  justifyContent:"flex-start",
     alignContent:"center",
   },
   root:{
-    marginTop: theme.spacing(4),
+    margin: "30px",
+    alignItems:"center",
+    flexDirection:"row-reverse",
     backgroundColor: "#FFC4DD",
+    color: "#040303",
     fontSize: "1.5rem",
     maxWidth: "900px",
     display: "flex",
-    flexDirection: "column",
-    justifyContent:"space-between", 
+    marginLeft: "45vh",
+   justifyContent:"space-between", 
+ 
     padding: theme.spacing(4),
       "& button":{
           backgroundColor: "#2E0249",
@@ -110,7 +94,15 @@ const useStyle = makeStyles ((theme) => ({
   form:{
     textDecoration:"none",
     display:"block",
-
+    color: "#040303",
+    [theme.breakpoints.down("sm")]:{
+      display: "block",
+      alignContent:"center",
+     margin: "2vh",
+     marginLeft:"3vh",
+     alignItems: "center",
+     maxWidth: "2vh",
+    },
   },
   sectiondark:{
     background : "#7F8487",
@@ -118,15 +110,58 @@ const useStyle = makeStyles ((theme) => ({
   },
   sectioncontent:{
     display: "flex",
-    alignContent: "center",
-    backgroundColor: "#FF85B3",
-    margin: "20px",
+    flexDirection:"column",
+    alignItems: "center",
+    margin: "25px",
     maxWidth: "80vh",
+   
   },
-  titleandChoice:{
-    // "& h5": {
-    //   marginTop: theme.spacing(2)
-    // }
+ 
+  boton:{
+    position:"flex",
+    zIndex: 999,
+    marginLeft: "75px",
+    bottom:"2 rem",
+    borderRadius:"3px",
+    [theme.breakpoints.down("sm")]:{
+        bottom: 10,
+        
+    },
+    backgroundColor:"#570A57",
+    border: "#570A57",
+    height:"5vh",
+    width:"10vh",
+    "& a":{
+      color: "#7F8487",
+      textDecoration: "none",
+      fontWeight: 900,
+    }
+  },
+  input:{
+    padding: "5px",
+    margin: "8px",
+    alignContent:"justify",
+    height:"5vh",
+    width:"41vh",
+    borderRadius: "5px"
+   
+  },
+  inputA:{
+    padding: "3px",
+    margin: "8px",
+    alignContent:"center",
+    height:"5vh",
+    width:"40vh",
+    borderRadius: "5px"
+
+  },
+  inputM:{
+    padding: "3px",
+    margin: "8px",
+    alignContent:"justify",
+    height:"15vh",
+    width:"52vh",
+    borderRadius: "5px"
   },
 }))
 

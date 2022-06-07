@@ -12,7 +12,7 @@ const About = ({title , dark, id , fondo}) => {
    
   return (
     <div className={`${classes.section} ${fondo && classes.sectiondark}`}>
-      <div className={ classes.selectioncontent} id={id}>
+    <div className={ classes.selectioncontent} id={id}>
         <Typography variant='h3' aling= "center">
           {title}
         </Typography>

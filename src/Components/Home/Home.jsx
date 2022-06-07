@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <Paper className={styles.section}>
       <ThemeProvider theme = {darkTheme}>
-      <About  title= "Sobre mi" id= "about"/>
+      <About  title= "Sobre mi" id= "Sobre Mi"/>
       </ThemeProvider>
       <ThemeProvider theme = {darkTheme}>
 

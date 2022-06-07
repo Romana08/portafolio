@@ -133,7 +133,6 @@ const NavBar = () => {
 const useStyle = makeStyles((theme) => ({
   paper:{
     height:"100%",
-    backgroundImage: "url(https://images.unsplash.com/photo-1574610758891-5b809b6e6e2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1512&q=80)"
   },
   root: {
     backgroundColor: "#16003B",

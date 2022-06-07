@@ -53,12 +53,19 @@ const useStyle = makeStyles ((theme)=> ({
     minHeight: "10vh",
     padding: "4vh",
     display:"flex",
+   
   },
   iconos:{
     padding: "5px", 
     margin: "15px",
     height:"10vh",
     width:"10vh",
+    [theme.breakpoints.down("sm")]:{
+      padding: "10px", 
+     margin: "7px",
+      height:"5vh",
+      width:"5vh",
+      },
     
   }, 
 

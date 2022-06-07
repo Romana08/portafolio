@@ -71,13 +71,22 @@ const useStyle = makeStyles ((theme) => ({
     margin: "30px",
     alignItems:"center",
     flexDirection:"row-reverse",
-    backgroundColor: "#FFC4DD",
+    backgroundColor: "#FFC4DD", //rosa//
     color: "#040303",
     fontSize: "1.5rem",
     maxWidth: "900px",
     display: "flex",
     marginLeft: "45vh",
    justifyContent:"space-between", 
+    [theme.breakpoints.down("sm")]:{
+      margin: "15px",
+      alignItems:"center",
+      flexDirection:"column-reverse",
+       backgroundColor: "#FFC4DD", //rosa//
+       color: "#040303",
+       fontSize: "1.5rem",
+     justifyContent:"space-between",
+    },
  
     padding: theme.spacing(4),
       "& button":{
@@ -89,28 +98,28 @@ const useStyle = makeStyles ((theme) => ({
         color: "#F806CC"
       }
     
-
   },
   form:{
     textDecoration:"none",
     display:"block",
     color: "#040303",
     [theme.breakpoints.down("sm")]:{
-      display: "flex",
+   justifyContent:"space-between", 
       alignContent:"center",
     
     },
-  },
+   },
   sectiondark:{
     background : "#7F8487",
     color : "#fff",
+  
   },
   sectioncontent:{
-    display: "flex",
-    flexDirection:"column",
-    alignItems: "center",
-    margin: "25px",
-    maxWidth: "80vh",
+     display: "flex",
+     flexDirection:"column",
+    // alignItems: "center",
+     margin: "25px",
+    // maxWidth: "80vh",
    
   },
  
@@ -124,22 +133,22 @@ const useStyle = makeStyles ((theme) => ({
         bottom: 10,
         
     },
-    backgroundColor:"#570A57",
-    border: "#570A57",
-    height:"5vh",
-    width:"10vh",
+     backgroundColor:"#570A57",
+     border: "#570A57",
+     height:"5vh",
+     width:"10vh",
     "& a":{
       color: "#7F8487",
       textDecoration: "none",
       fontWeight: 900,
     }
-  },
+   },
   input:{
     padding: "5px",
     margin: "8px",
     alignContent:"justify",
     height:"5vh",
-    width:"41vh",
+    width:"30vh",
     borderRadius: "5px"
    
   },
@@ -148,16 +157,16 @@ const useStyle = makeStyles ((theme) => ({
     margin: "8px",
     alignContent:"center",
     height:"5vh",
-    width:"40vh",
+    width:"30vh",
     borderRadius: "5px"
 
-  },
+   },
   inputM:{
     padding: "3px",
     margin: "8px",
-    alignContent:"justify",
-    height:"15vh",
-    width:"52vh",
+    alignContent:"center",
+    height:"22vh",
+    width:"30vh",
     borderRadius: "5px"
   },
 }))

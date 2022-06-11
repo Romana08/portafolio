@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import Redes from './Redes';
 
 
+
 const Contacto = ({title , dark, id}) => {
   const classes = useStyle();
 
@@ -20,10 +21,7 @@ const Contacto = ({title , dark, id}) => {
   return (
       
           <div className={`${classes.section} ${dark && classes.sectiondark}`}>
-    <Typography variant='h3'>
-          {title}
-        </Typography>  
-           <div className={ classes.sectioncontent} id={id}>
+              <div className={ classes.sectioncontent} id={id}>
              
          
         <Paper className={classes.root} maxWhidth="md">
@@ -61,23 +59,25 @@ const Contacto = ({title , dark, id}) => {
 const useStyle = makeStyles ((theme) => ({
 
   section:{
-    minHeight: "100vh",
-    display:"flex",
-     flexDirection:"column",
-  justifyContent:"flex-start",
-    alignContent:"center",
+    // minHeight: "100vh",
+     display:"flex",
+     position: "bock",
+     alignItems:"center", 
+      justifyContent:"flex-start",
+      alignContent:"center",
+    // [theme.breakpoints.dows("sm")]:{
+    //   paddingLeft: "5px",
+
+    // },
   },
   root:{
-    margin: "30px",
     alignItems:"center",
-    flexDirection:"row-reverse",
     backgroundColor: "#FFC4DD", //rosa//
     color: "#040303",
     fontSize: "1.5rem",
     maxWidth: "900px",
-    display: "flex",
-    marginLeft: "45vh",
-   justifyContent:"space-between", 
+    // display: "flex",
+  // justifyContent:"space-between", 
     [theme.breakpoints.down("sm")]:{
       margin: "15px",
       alignItems:"center",

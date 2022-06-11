@@ -63,8 +63,10 @@ const About = ({title , dark, id , fondo}) => {
     </div>
   )
 }
-const useStyle = makeStyles ((theme) => ({
 
+
+const useStyle = makeStyles ((theme) => ({
+  
   section: {
       // minHeight: "100vh",
       height: "90vh",

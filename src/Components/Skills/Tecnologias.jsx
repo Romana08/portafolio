@@ -26,7 +26,7 @@ const skillsIcons =[
         title: "React.js",
         year: "2021",
         description:"usado en: ",
-        start: 4,
+        stars: 2,
     
     },
 
@@ -34,49 +34,55 @@ const skillsIcons =[
         title: "Node.js",
         year: "2021",
         description:"usado en: ",
-        stars: 3
+        stars: 2
     },
     {   src: cishart ,
         title: "C++",
         year: "2021",
         description:"usado en: ",
-        stars: 2,
+        stars: 1,
     }
         , 
     {   src: express , 
         title:"Express",
         year: "2021",
         description:"usado en: ",
-        stars: 3,
+        stars: 2,
     }, 
     {   src: js , 
         title:"JavaScript",
         year: "2021",
         description:"usado en: ",
-        stars: 5,
+        stars: 3,
     }, 
     {   
         src: materialUI , 
         title:"MaterialUI",
         year: "2021",
         description:"usado en: ",
-        start: 4,
+        stars: 2,
     },
     {   src: net , 
         title:".Net",
         year: "2021",
-        description:"usado en: "
+        description:"usado en: ",
+        stars: 1,
+
 },
     {   src: pgdmin , 
         title:"Postgres",
         year: "2021",
-        description:"usado en: "
+        description:"usado en: ",
+        stars: 2,
+
 },
     {   
         src: sequalize , 
         title:"Sequalize",
         year: "2021",
-        description:"usado en: "
+        description:"usado en: ",
+        stars: 2,
+
     },
 ]
 const classes = useStyle();

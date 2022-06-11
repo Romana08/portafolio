@@ -3,8 +3,7 @@ import GithubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import EmailIcon from '@material-ui/icons/Email';
-import {Grid, IconButton, List  } from '@material-ui/core';
-import Link from 'react-scroll/modules/components/Link';
+import {Grid, IconButton, Link  } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 
 const mediosDeContacto = [
@@ -36,7 +35,7 @@ const mediosDeContacto = [
     <Grid  position="bock" spacing={2} className = {classes.section}>
       {mediosDeContacto.map((item) => (
         <Grid item key={item.name}>
-          <Link href={item.url}>
+          <Link href={item.url} color="primary" target="_blank" rel="noopener noreferrer">
             <IconButton className={classes.iconos}>
               <item.icon />
             </IconButton>

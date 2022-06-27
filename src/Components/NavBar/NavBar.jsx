@@ -24,7 +24,7 @@ const NavBar = () => {
   const links = [
     {
       id: "Sobre Mi",
-      text: "Sobre Mi",
+      text: "SOBRE MI",
       className: "MiAvatar",
       icon: <Avatar alt="Remy Sharp" src={foto} 
       />

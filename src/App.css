@@ -1,3 +1,8 @@
-/* .{
-  justify-ontent: left;
-} */
+
+
+.cont {
+ background-image: url('./Img/Logo/fondo3.jpg');
+ background-repeat:no-repeat; 
+ background-size: cover; 
+ min-height: 120vh; 
+}

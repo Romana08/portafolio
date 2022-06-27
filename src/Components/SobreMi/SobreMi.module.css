@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Castoro:ital@1&family=Lobster&family=Playball&family=Smooch&family=Updock&family=Viga&display=swap');
+
+
+.conteiner{
+    display: flex;
+    transform: translate(3.125rem, 6.25rem);
+    width: 75rem;
+    height: 37.5rem;
+    padding: 0.9375rem;
+    margin: 0.9375rem;
+    align-content: center;
+}
+.img{
+    width: 12.5rem;
+    height: 25rem;
+    border-bottom-left-radius: 3.125rem;
+    border-bottom-right-radius: 5.625rem;
+    border-top-right-radius: 7.5rem;
+    border-top-left-radius: 3.125rem;
+    object-fit: cover;
+    opacity: 100%;
+    border: 0.375rem;
+}
+.card{
+    display: block;
+    
+    font-size: 1.625rem;
+   display:flex ;
+    animation-duration: 40s;
+    animation-delay: 20s;
+    color: aliceblue;
+    font-family: 'Castoro', serif;
+    padding: 1.9375rem;
+    border-radius: 1.25rem;
+    background-color: rgba(137, 43, 226, 0.087);
+}
+.parraf1{
+    display: flex;
+}
+.parraf2{
+    margin: 0.9375rem;
+    text-align: center;
+}
+.button{
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    opacity:100;
+    font-size: 1.125rem;
+    color: #f6f6f6;
+    font-family: 'Viga', sans-serif;
+    background-color: #420779;
+    border-radius: 0.9375rem;
+    margin: 2.1875rem;
+    padding: 2.25rem;
+
+}
+#button:hover{
+    background:rgba(212, 199, 213, 0.76) ;
+    box-shadow: 0 0 0.625rem rgba(38, 4, 43, 0.76),
+    0 0 40px rgba(111, 1, 126, 0.575), 0 0 80px rgba(210, 173, 215, 0.76);
+   
+}
+
+@media (max-width: 992px){
+    .conteiner{
+        width: 300px;
+    }
+    .img{
+        width: 15rem;
+        height: 15rem;
+        padding-left: 26px;
+        align-content: center;
+     
+    }
+    .parraf1{
+        display: flex;
+        width: 22em;
+        height: 23.5em;
+    }
+     .card{
+        display: block;
+        font-size: 1.9rem;
+        width: 45rem;
+        height: 52rem;
+        animation-duration: 40s;
+        animation-delay: 20s;
+        border-radius: 1.25rem;
+    } 
+    .button{
+        margin: 1.25rem;
+        padding: 0.75rem;
+    }
+ 
+}
+    
+
+@media (max-width: 600px){
+    .conteiner{
+        width: 300px;
+    }
+    .img{
+        width: 12rem;
+        height: 12rem;
+        padding-left: 26px;
+        align-content: center;
+     
+    }
+    .parraf1{
+        display: flex;
+        width: 22em;
+        height: 23.5em;
+    }
+     .card{
+        display: block;
+        font-size: 0.9rem;
+        width: 30rem;
+        height: 40rem;
+        animation-duration: 40s;
+        animation-delay: 20s;
+        border-radius: 1.25rem;
+    } 
+    .button{
+        margin: 1.25rem;
+        padding: 0.75rem;
+    }
+ 
+}

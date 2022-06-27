@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardContent, CardMedia, Grid, Link, makeStyles, Typography } from '@material-ui/core';
 // import MocData from './MocData';
 import lp from "../../Img/PI/Capturas/lp.png";
-import ecomerce from "../../Img/PI/Capturas/form.png"
+import ecomerce from "../../Img/PI/Home.png"
 
 const mocData = [{
     title:"Pi-Counties",
@@ -56,9 +56,10 @@ const useStyle = makeStyles ((theme) => ({
     color : "#fff",
   },
   sectioncontent:{
+    color: "#fff",
     maxWidth: "90vh",
     margin:"0 auto" ,
-    padding: theme.spacing(5)
+    padding: theme.spacing(15)
   },
   grid:{
     marginTop: theme.spacing(10),

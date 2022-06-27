@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Castoro:ital@1&family=Lobster&family=Playball&family=Smooch&family=Updock&family=Viga&display=swap');
+
+.get{
+    text-align: center;
+    color:aliceblue;
+    font-family: 'Castoro', serif;
+}
+.cont{
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+.social{
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    background-color: #4207795f;
+}
+.form{
+    display: block;
+    color: #fff;
+    box-shadow: 0px 0px 5px 1px #a000b5;
+  background-color: rgba(128, 50, 231, 0.334);
+  width: 900px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Castoro', serif;
+  font-weight: 400;
+  font-size: 20px;
+ 
+
+}
+.input1{
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 550px;
+    margin-bottom: 10px;
+}
+.input2{
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 550px;
+    margin-bottom: 10px;
+
+}
+.input4{
+
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 45px;
+    width: 550px;
+    margin-bottom: 10px;
+}
+
+.sectiondark{
+    display: flex;
+    /* align-items: center;
+    text-align: center; */
+    margin-right: 30px;
+    width: 75rem;
+    height: 28.75rem;
+}
+.button{
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    opacity:100;
+    font-size: 1.125rem;
+    color: #f6f6f6;
+    font-family: 'Viga', sans-serif;
+    background-color: #42077952;
+    border-radius: 0.9375rem;
+    margin: 1.1875rem;
+    padding: 1.25rem;
+
+}
+#button:hover{
+    background:rgba(212, 199, 213, 0.76) ;
+    box-shadow: 0 0 0.625rem rgba(38, 4, 43, 0.76),
+    0 0 40px rgba(111, 1, 126, 0.575), 0 0 80px rgba(210, 173, 215, 0.76);
+   
+}
+
+@media (max-width: 992px){
+
+     .get{
+        display: block;
+        padding: 5px;
+        font-size: 1.2rem;
+        width: 45rem;
+        height: 62rem;
+        animation-duration: 40s;
+        animation-delay: 20s;
+        border-radius: 1.25rem;
+    } 
+    .form{
+        display: block;
+    color: #fff;
+    box-shadow: 0px 0px 5px 1px #a000b5;
+  background-color: rgba(128, 50, 231, 0.334);
+  width: 700px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Castoro', serif;
+  font-weight: 200;
+  font-size: 15px;
+    } 
+    .button{
+        margin: 1.25rem;
+        padding: 0.75rem;
+    }
+ 
+    .social{
+
+        padding: 20px;
+        margin: 20px;
+        border-radius: 15px;
+        background-color: #4207794d;
+    }
+    .cont{
+        display: block;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px){
+    .conteiner{
+        width: 300px;
+    }
+    .img{
+        width: 12rem;
+        height: 12rem;
+        padding-left: 26px;
+        align-content: center;
+     
+    }
+    .parraf1{
+        display: flex;
+        width: 22em;
+        height: 23.5em;
+    }
+     .card{
+        display: block;
+        font-size: 0.9rem;
+        width: 30rem;
+        height: 40rem;
+        animation-duration: 40s;
+        animation-delay: 20s;
+        border-radius: 1.25rem;
+    } 
+    .button{
+        margin: 1.25rem;
+        padding: 0.75rem;
+    }
+ 
+}

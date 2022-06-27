@@ -1,29 +1,31 @@
-import {makeStyles } from '@material-ui/core';
 import NavBar from './Components/NavBar/NavBar';
-import Home from "./Components/Home/Home";
+import "./App.css"; 
+import { SobreMi } from './Components/SobreMi/SobreMi';
+import Skills from './Components/Skills/Skills';
+import MyWork from './Components/MyWork/MyWork';
+import Contacto from './Components/Contacto/Contacto';
+import style from"./App.css";
+
 
 
 function App(){
-const classes = useStyle(); 
 
   return (
-   <div className={classes.root}>
-     {/* <h1>Atr</h1> */}
-     <NavBar/>
-     <Home/>
-     {/* <About  title= "About Me" dark= {true} id= "about" src = {fondo}/> 
-     /*<Skills title= "My coding" dark= {false} id= "skills"/>
-     <MyWork title= "My work" dark= {true} id= "work"/>
-     <Contacto title= "Get in touch" dark= {false} id= "contacto"/>*/}
-   </div>
-  );
- }
+    <div className= "cont">
+     <NavBar></NavBar>
+     <SobreMi title= "Sobre mi" id= "Sobre Mi"></SobreMi>
+     <Skills title= "Skills" id= "skills"></Skills>
+     <MyWork title= "My work"  id= "work"></MyWork>
+     <Contacto title= "Contacto" id= "contacto"></Contacto>
+    <div>
+      Portafolio Web - Idea Original - Romina Morton
+      </div>
+    </div>
 
-const useStyle = makeStyles ((theme) => ({
-  root:{
 
-  }
-}))
+);
+}
+
 
 export default App;
 

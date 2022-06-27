@@ -31,18 +31,18 @@ const NavBar = () => {
     },
     {
       id: "skills",
-      text: "Skills",
+      text: "SKILLS",
       icon: <EmojiObjectsTwoTone className={classes.skills} />,
     },
     {
       id: "work",
-      text: "Mis Proyectos",
+      text: "MIS TRABAJOS",
       className: "proyectos",
       icon: <BuildTwoTone />,
     },
     {
       id: "contacto",
-      text: "Contacto",
+      text: "CONTACTO",
       className: "contacto",
       icon: <AddIcCall />,
     },

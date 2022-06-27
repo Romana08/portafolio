@@ -13,9 +13,11 @@ export const SobreMi = ({id}) => {
          <img className={Style.img} src={foto} alt='not found'/>     
          <div className={Style.parraf1}>
          <div className={Style.parraf2}>
-         Hola, soy Romina Morton, Fullstack Developer
+         Hola, soy Romina Morton, Fullstack Developer.
          
-         Me didico a la Programación, si bien soy Licenciada en Comunicación con Orientación en Audiovisual; tengo un Perfil más bien técnico y es por esa misma razón, que en el año 2019 comencé a indagar en el mundo del desarrollo, el diseño y la tecnologia. Si te interesa, te invito a que pases por mi perfil GitHub o que conectemos en LinkedIn.
+         Me didico a la Programación y cuento con excelentes habilidades de comunicación, ya que en el 2019 me recibí de Licenciada en Comunicación. 
+         Mi Perfil, en esa área es técnico y fue por esa razón, que en el año que me recibí comencé a indagar en el mundo del desarrollo, el diseño y la tecnologia. 
+         Si te interesa, te invito a que pases por mi perfil GitHub o que conectemos en LinkedIn.
     
          <div>
            <button className={Style.button}>

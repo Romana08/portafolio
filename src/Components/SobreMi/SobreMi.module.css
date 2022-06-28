@@ -8,7 +8,7 @@
     width: 75rem;
     height: 37.5rem;
     padding: 0.9375rem;
-    margin: 0.9375rem;
+    /* margin: 0.9375rem; */
     align-content: center;
 }
 .img{
@@ -103,7 +103,7 @@
     .img{
         width: 12rem;
         height: 12rem;
-        padding-left: 1.625rem;
+        padding-left: 0.625rem;
         align-content: center;
      
     }
@@ -130,16 +130,19 @@
 
 @media (max-width: 375px){
     .conteiner{
-        width: 8.75rem;
+        width: 16.75rem;
+        margin-top: -3rem;
     }
     .img{
         width: 12rem;
         height: 12rem;
+        padding-left: 0.625rem;
+        align-content: center;
      
     }
     .parraf1{
         display: flex;
-        width: 18em;
+        width: 17em;
         height: 23.5em;
     }
      .card{
@@ -152,6 +155,7 @@
         border-radius: 1.25rem;
     } 
     .button{
+        margin: 1.25rem;
         padding: 0.75rem;
     }
  

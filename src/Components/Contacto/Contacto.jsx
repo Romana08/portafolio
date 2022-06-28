@@ -28,7 +28,6 @@ const Contacto = ({title , dark, id}) => {
 							<h2>Get in touch</h2>
 							<p>En caso de que sea de tu interés, podes contactarme mediante este formulario. Me gustaría tener la oportunidad de tener una conversación e intercambiar ideas!
 								</p>
-           <div className={Style.sectiondark}>
               <div className={ Style.sectioncontent} id={id}>
              
          
@@ -90,7 +89,7 @@ const Contacto = ({title , dark, id}) => {
         
         </div>
         </div>
-      </div>
+     
         {/* </Typography>
         </Paper> */}
       </div>

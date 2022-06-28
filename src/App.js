@@ -4,7 +4,6 @@ import { SobreMi } from './Components/SobreMi/SobreMi';
 import Skills from './Components/Skills/Skills';
 import MyWork from './Components/MyWork/MyWork';
 import Contacto from './Components/Contacto/Contacto';
-import style from"./App.css";
 
 
 

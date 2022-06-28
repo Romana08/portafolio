@@ -168,6 +168,7 @@ const useStyle = makeStyles((theme) => ({
       fontSize: "1.4 rem",
       fontWeight: "bold",
       padding: "15px",
+      
     },
     "& a:hover": {
       cursor: "poitner",

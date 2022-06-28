@@ -30,7 +30,7 @@ const MyWork = ({title , dark, id}) => {
               >
                 <Card className={classes.card}>
                   <CardMedia image={src} titulo ="caratula" className={classes.caratula}>
-                    <CardContent>
+                    <CardContent className={classes.cardContent}>
                       <Link href={link} color="primary" target="_blank" rel="noopener noreferrer">
                       {title}
                       </Link>
@@ -48,8 +48,7 @@ const MyWork = ({title , dark, id}) => {
 const useStyle = makeStyles ((theme) => ({
   section:{
     minHeight: "100vh",
-    
-
+   
   },
   sectiondark:{
     background : "#292738",
@@ -57,23 +56,45 @@ const useStyle = makeStyles ((theme) => ({
   },
   sectioncontent:{
     color: "#fff",
-    maxWidth: "90vh",
+    // maxWidth: "90vh",
     margin:"0 auto" ,
-    padding: theme.spacing(15)
+    padding: theme.spacing(18),
+  
   },
   grid:{
     marginTop: theme.spacing(10),
+    [theme.breakpoints.down('xs')]:{
+      marginTop: theme.spacing(2),
+
+    }
 
   },
   card:{
     maxWidth: 345,
     minHeight: 275,
     margin: theme.spacing(3),
+    [theme.breakpoints.down('xs')]:{
+     
+      maxWidth: 245,
+    minHeight: 175,
+    }
 
+  },
+  cardContent:{
+    [theme.breakpoints.down('xs')]:{
+      background : "#292738",
+      maxWidth: 345,
+      minHeight: 175,
+      margin : 2
+    }
   },
   caratula:{
     height: 0,
-    paddingTop: '56.25%'
+    paddingTop: '56.25%',
+    [theme.breakpoints.down('xs')]:{
+      height: 3,
+    paddingTop: '82.25%'
+    }
   }
 }))
 

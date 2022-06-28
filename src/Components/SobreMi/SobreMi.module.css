@@ -65,7 +65,7 @@
 
 @media (max-width: 992px){
     .conteiner{
-        width: 300px;
+        width: 18.75rem;
     }
     .img{
         width: 15rem;
@@ -98,12 +98,12 @@
 
 @media (max-width: 600px){
     .conteiner{
-        width: 300px;
+        width: 18.75rem;
     }
     .img{
         width: 12rem;
         height: 12rem;
-        padding-left: 26px;
+        padding-left: 1.625rem;
         align-content: center;
      
     }
@@ -126,4 +126,34 @@
         padding: 0.75rem;
     }
  
+}
+
+@media (max-width: 375px){
+    .conteiner{
+        width: 8.75rem;
+    }
+    .img{
+        width: 12rem;
+        height: 12rem;
+     
+    }
+    .parraf1{
+        display: flex;
+        width: 18em;
+        height: 23.5em;
+    }
+     .card{
+        display: block;
+        font-size: 0.8rem;
+        width: 18rem;
+        height: 39rem;
+        animation-duration: 40s;
+        animation-delay: 20s;
+        border-radius: 1.25rem;
+    } 
+    .button{
+        padding: 0.75rem;
+    }
+ 
+
 }

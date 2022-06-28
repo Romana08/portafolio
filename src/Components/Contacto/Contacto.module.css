@@ -8,12 +8,12 @@
 .cont{
     display: flex;
     align-items: center;
-    padding: 50px;
+    padding: 3.125rem;
 }
 .social{
-    padding: 20px;
-    margin: 20px;
-    border-radius: 15px;
+    padding: 1.25rem;
+    margin: 1.25rem;
+    border-radius: 0.9375rem;
     background-color: #4207795f;
 }
 .form{
@@ -21,47 +21,47 @@
     color: #fff;
     box-shadow: 0px 0px 5px 1px #a000b5;
   background-color: rgba(128, 50, 231, 0.334);
-  width: 900px;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px;
+  width: 56.25rem;
+  border-radius: 0.625rem;
+  padding: 1.25rem;
+  margin: 1.25rem;
   margin-left: auto;
   margin-right: auto;
   font-family: 'Castoro', serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
  
 
 }
 .input1{
-    border-radius: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    border-radius: 0.3125rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
     width: 550px;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 .input2{
-    border-radius: 5px;
-    padding-top: 10px;
+    border-radius: 0.3125rem;
+    padding-top: 0.625rem;
     padding-bottom: 10px;
-    width: 550px;
-    margin-bottom: 10px;
+    width: 34.375rem;
+    margin-bottom: 0.625rem;
 
 }
 .input4{
 
-    border-radius: 5px;
-    padding-top: 10px;
-    padding-bottom: 45px;
-    width: 550px;
-    margin-bottom: 10px;
+    border-radius: 0.3125rem;
+    padding-top: 0.625rem;
+    padding-bottom: 2.8125rem;
+    width: 34.375rem;
+    margin-bottom: 0.625rem;
 }
 
 .sectiondark{
     display: flex;
     /* align-items: center;
     text-align: center; */
-    margin-right: 30px;
+    margin-right: 1.875rem;
     width: 75rem;
     height: 28.75rem;
 }
@@ -103,15 +103,15 @@
     color: #fff;
     box-shadow: 0px 0px 5px 1px #a000b5;
   background-color: rgba(128, 50, 231, 0.334);
-  width: 700px;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 20px;
+  width: 43.75rem;
+  border-radius: 0.625rem;
+  padding: 0.625rem;
+  margin: 1.25rem;
   margin-left: auto;
   margin-right: auto;
   font-family: 'Castoro', serif;
-  font-weight: 200;
-  font-size: 15px;
+  font-weight: 12.5rem;
+  font-size: 0.9375rem;
     } 
     .button{
         margin: 1.25rem;
@@ -161,4 +161,75 @@
         padding: 0.75rem;
     }
  
+}
+@media (max-width: 375px){
+    .get{
+        display: block;
+        padding: 6px;
+        font-size: 0.8rem;
+        width: 22rem;
+        height: 52rem;
+        margin-left: 0.25rem;
+    
+    } 
+    .cont{
+        display: flex;
+        align-items: center;
+        padding: 3.125rem;
+    }
+    .form{
+        display: block;
+    color: #fff;
+    box-shadow: 0px 0px 5px 1px #a000b5;
+  background-color: rgba(128, 50, 231, 0.334);
+  width: 18.75rem;
+  border-radius: 0.625rem;
+  padding: 0.625rem;
+  margin: 0.85rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Castoro', serif;
+  font-weight: 12.5rem;
+  font-size: 0.9375rem;
+    } 
+
+    .input1{
+        padding-top: 0.2rem;
+        padding-bottom: 0.5rem;
+        width: 10.375rem;
+        margin-bottom: 0.925rem;
+    }
+    .input2{
+        padding-top: 0.2rem;
+        padding-bottom: 0.5rem;
+        width: 10.375rem;
+        margin-bottom: 0.925rem;
+    
+    }
+    .input4{
+    
+        border-radius: 0.3125rem;
+        padding-bottom: 0.5rem;
+        width: 10.375rem;
+        margin-bottom: 0.925rem;
+        padding-bottom: 1.8125rem;
+    }
+    .button{
+      
+        font-size: 0.8rem;
+        margin: 0.875rem;
+        padding: 0.85rem;
+    }
+ 
+    .social{
+
+        padding: 0.85rem;
+        margin: 0.85rem;
+        border-radius: 15px;
+        background-color: #4207794d;
+    }
+    .cont{
+        display: block;
+        align-items: center;
+    }
 }

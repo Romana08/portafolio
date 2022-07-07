@@ -1,5 +1,6 @@
 import React from 'react';
 import About from '../About/About';
+import Portada from './Present/Portada';
 // import { makeStyles, Paper } from '@material-ui/core';
 // import { createTheme, ThemeProvider } from '@material-ui/core';
 // import { CssBaseline } from '@material-ui/core/CssBaseline';
@@ -20,7 +21,9 @@ const Home = () => {
   // })
   return (
  <div>
+  <Portada/>
 
+  
       <SobreMi title= "Sobre mi" id= "Sobre Mi"/>
       <Skills title= "Skills" id= "skills"/>
        <MyWork title= "My work"  id= "work"/>

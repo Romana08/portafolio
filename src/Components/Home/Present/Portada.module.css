@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,700;1,700&family=Castoro:ital@1&family=Lobster&family=Marck+Script&family=Playball&family=Roboto+Mono:wght@300&family=Smooch&family=Updock&family=Viga&display=swap');
+.box{
+    font-family: 'Roboto Mono', monospace;
+        display: flex;
+    color: antiquewhite;
+    font-weight: 800px;
+    font-size: 30px;
+    width: 1200px;
+    text-align: center;
+  
+}
+.press{
+    margin: auto;
+}
+.title{
+    color: rgb(240, 104, 181);
+    
+}
+
+.ref{
+    margin-top: 20px;
+    width: 600px;
+    height: 100px;
+}
+.icons{
+    background-color: rgb(240, 104, 181);
+    border-radius: 50px;
+    color: aliceblue;
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    padding: 15px;
+
+
+   
+}

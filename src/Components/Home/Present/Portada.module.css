@@ -3,9 +3,9 @@
     font-family: 'Roboto Mono', monospace;
         display: flex;
     color: antiquewhite;
-    font-weight: 800px;
-    font-size: 30px;
-    width: 1200px;
+    font-weight: 50rem;
+    font-size: 1.875rem;
+    width: 75rem;
     text-align: center;
   
 }
@@ -16,21 +16,105 @@
     color: rgb(240, 104, 181);
     
 }
-
 .ref{
-    margin-top: 20px;
-    width: 600px;
-    height: 100px;
+    margin-top: 1.25rem;
+    width: 37.5rem;
+    height: 6.25rem;
 }
 .icons{
     background-color: rgb(240, 104, 181);
-    border-radius: 50px;
+    border-radius: 3.125rem;
     color: aliceblue;
-    width: 60px;
-    height: 60px;
-    margin: 20px;
-    padding: 15px;
+    width: 3.75rem;
+    height: 3.75rem;
+    margin: 1.25rem;
+    padding: 0.9375rem;
+}
 
+@media (max-width: 992px){
+    .box{
+        /* background-color: aqua;
+        font-family: 'Roboto Mono', monospace;
+        color: antiquewhite;
+        font-weight: 10rem;
+        font-size:0.875rem;
+        width: 55rem;
+        text-align: center; */
+      
+    }
+    
+}
+@media (max-width: 600px){
+    .box{
+        display: block;
+      font-weight: 2rem;
+        font-size: 2.875rem;
+        width: 600px;
+        height: 500px;
+      
+    }
+  
+    .press{
+        font-size: 12pt;
+    }
+    .title{
+        color: rgb(240, 104, 181);
+        
+    }
+    .img{
+        width: 370px;
+        height: 350px;
+    }
+    .ref{
+        margin:0.75rem;
+        width: 300px;
+        text-align: center;
+        height: 4.25rem;
+    }
+    .icons{
+        width: 1.75rem;
+        height: 1.75rem;
+        margin: 0.25rem;
+        padding: 0.375rem;
+    }
+}
 
-   
+@media (max-width: 375px){
+    .box{
+        display: block;
+      font-weight: 6rem;
+        font-size: 6.875rem;
+        width: 375px;
+        height: 500px;
+        padding: 20px; 
+      
+    }
+  
+    .press{
+        font-size: 12pt;
+        margin: auto;
+    }
+    .title{
+        color: rgb(240, 104, 181);
+        
+    }
+    .img{
+        width: 370px;
+        height: 350px;
+    }
+    .ref{
+        margin:0.75rem;
+        width: 300px;
+        text-align: center;
+        height: 4.25rem;
+    }
+    .icons{
+        width: 1.75rem;
+        height: 1.75rem;
+        margin: 0.25rem;
+        padding: 0.375rem;
+    }
+    
+ 
+
 }

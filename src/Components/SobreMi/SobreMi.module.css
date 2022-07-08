@@ -105,6 +105,7 @@
 
 @media (max-width: 600px){
     .conteiner{
+        text-align: center;
         width: 18.75rem;
     }
     .img{
@@ -120,6 +121,8 @@
         height: 23.5em;
     }
      .card{
+        text-align: center;
+
         display: block;
         font-size: 0.9rem;
         width: 30rem;
@@ -154,6 +157,7 @@
     }
      .card{
         display: block;
+
         font-size: 0.8rem;
         width: 18rem;
         height: 39rem;

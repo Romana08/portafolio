@@ -133,32 +133,47 @@
 
 @media (max-width: 600px){
     .conteiner{
-        width: 300px;
+        width: 600px;
+        text-align: center;
     }
-    .img{
-        width: 12rem;
-        height: 12rem;
-        padding-left: 26px;
-        align-content: center;
-     
-    }
-    .parraf1{
-        display: flex;
-        width: 22em;
-        height: 23.5em;
-    }
-     .card{
+    .get{
+        text-align: center;
         display: block;
-        font-size: 0.9rem;
-        width: 30rem;
-        height: 40rem;
-        animation-duration: 40s;
-        animation-delay: 20s;
-        border-radius: 1.25rem;
+        padding: 6px;
+        margin: auto;
+        font-size: 0.8rem;
+        width: 27rem;
+        height: 62rem;
+    
     } 
-    .button{
-        margin: 1.25rem;
-        padding: 0.75rem;
+    .form{
+        text-align: center;
+        padding: 8px;
+        margin: auto;
+        font-size: 0.8rem;
+        width: 20rem;
+        height: 25rem;
+    }
+    .input1{
+        width: 18.75rem;
+    }
+    .input2{
+        width: 18.75rem;
+    }
+    .input4{
+
+       width: 18.75rem;
+        margin-bottom: 0.625rem;
+    }
+    .social{
+        text-align: center;
+        padding: 8px;
+        margin: auto;
+        margin-top: 15px;
+        font-size: 0.8rem;
+        width: 20rem;
+        height: 25rem;
+       
     }
  
 }

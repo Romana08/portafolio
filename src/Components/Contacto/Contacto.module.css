@@ -327,6 +327,11 @@
       font-size: 0.9375rem;
 
     }
+    .icons{
+        display: block;
+        width: 12.5rem;
+        height: 5rem;
+    }
     .cont{
         display: block;
         align-items: center;

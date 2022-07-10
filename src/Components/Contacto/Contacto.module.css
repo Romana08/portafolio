@@ -268,12 +268,12 @@
         align-items: center;
     }
 } 
-@media (max-width: 300px){
+@media (max-width: 320px){
     .get{
         display: block;
         padding: 6px;
         font-size: 0.8rem;
-        width: 290px;
+        width: 310px;
         height: 65rem;
         margin-left: 0.2rem;
     

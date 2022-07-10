@@ -168,9 +168,9 @@
         padding: 0.75rem;
     }
 }
-@media (max-width: 300px){
+@media (max-width: 320px){
     .conteiner{
-        width: 18.75rem;
+        width: 320px;
         height: 46.5rem;
         
 

@@ -114,12 +114,12 @@
         height: 18.25rem;
     }
 }
-@media (max-width:300px){
+@media (max-width:320px){
     .box{
      
         font-weight: 50rem;
         font-size: 1.875rem;
-        width: 18.75rem;
+        width: 300px;
         text-align: center;
         padding: 20px;
       
@@ -130,7 +130,7 @@
     }
    
     .ref{
-        width:14.75rem;
+        width:236px;
         height: 5.25rem;
     }
     .icons{

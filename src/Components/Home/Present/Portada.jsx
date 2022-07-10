@@ -18,8 +18,8 @@ const Portada = () => {
 
    <div className={style.ref}>
     <a href= '#Sobre Mi'>
-    <AssignmentIndIcon className={style.icons} ></AssignmentIndIcon></a>
-    <a href= '#skills'><WorkIcon className={style.icons}></WorkIcon></a>
+    <AssignmentIndIcon className={style.icons} width = '500px'></AssignmentIndIcon></a>
+    <a href= '#skills'><WorkIcon className={style.icons} ></WorkIcon></a>
     <a href= '#work'><AssistantIcon className={style.icons}></AssistantIcon></a>
     <a href='#contacto'><PermPhoneMsgIcon className={style.icons}></PermPhoneMsgIcon></a>
     

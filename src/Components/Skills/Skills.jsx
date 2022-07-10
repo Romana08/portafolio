@@ -78,8 +78,8 @@ const Skills = ({ id }) => {
     },
   ];
   return (
-    <div id={id} className={style.conteiner}>
-      <div className={style.titulo}>Estas son mis Skills</div>
+      <div className={style.titulo} >
+        <p className={style.tit}>Estas son mis Skills</p>
       <div className={style.gird}>
         {skillsIcons &&
           skillsIcons.map((item) => (

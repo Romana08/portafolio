@@ -76,7 +76,7 @@ const useStyle = makeStyles ((theme) => ({
     [theme.breakpoints.down('xs')]:{
      
       maxWidth: 245,
-    minHeight: 175,
+    minHeight: 200,
     }
 
   },

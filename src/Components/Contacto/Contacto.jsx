@@ -26,7 +26,7 @@ const Contacto = ({title , dark, id}) => {
       
         <div className={Style.get}>
 							<h2>Get in touch</h2>
-							<p>En caso de que sea de tu interés, podes contactarme mediante este formulario. Me gustaría tener la oportunidad de tener una conversación e intercambiar ideas!
+							<p className={Style.text}>En caso de que sea de tu interés, podes contactarme mediante este formulario. Me gustaría tener la oportunidad de tener una conversación e intercambiar ideas!
 								</p>
               <div className={ Style.sectioncontent} id={id}>
              
@@ -75,15 +75,15 @@ const Contacto = ({title , dark, id}) => {
         <h2>Social</h2>
         <ul className={Style.icons}>
 											<a href="https://github.com/Romana08"><span class="label">
-                        <img src={Git} alt="not found" className={Style.git} width = "30px"/>
+                        <img src={Git} alt="not found" className={Style.log} width = "30px"/>
                         </span></a>
 												<a href="https://wa.me/543516014087" class="icon brands fa-whatsapp">
-                        <img src={wapp} alt="not found" className={Style.Li} width = "30px"/>
+                        <img src={wapp} alt="not found" className={Style.log} width = "30px"/>
                           <span class="label">
                         
                           </span></a>
 												<a href="https://www.linkedin.com/in/romina-morton-delgado/" class="icon brands fa-linkedin-in"><span class="label">
-                        <img src={LI} alt="not found" className={Style.Li} width = "30px"/>
+                        <img src={LI} alt="not found" className={Style.log} width = "30px"/>
                           </span></a>
 											</ul>
         
@@ -98,119 +98,5 @@ const Contacto = ({title , dark, id}) => {
     
   )
 }
-// const useStyle = makeStyles ((theme) => ({
-
-//   section:{
-//     // minHeight: "100vh",
-//      display:"flex",
-//      position: "bock",
-//      alignItems:"center", 
-//       justifyContent:"flex-start",
-//       alignContent:"center",
-//     // [theme.breakpoints.dows("sm")]:{
-//     //   paddingLeft: "5px",
-
-//     // },
-//   },
-//   root:{
-//     alignItems:"center",
-//     backgroundColor: "#FFC4DD", //rosa//
-//     color: "#040303",
-//     fontSize: "1.5rem",
-//     maxWidth: "900px",
-//     // display: "flex",
-//   // justifyContent:"space-between", 
-//     [theme.breakpoints.down("sm")]:{
-//       margin: "15px",
-//       alignItems:"center",
-//       flexDirection:"column-reverse",
-//        backgroundColor: "#FFC4DD", //rosa//
-//        color: "#040303",
-//        fontSize: "1.5rem",
-//      justifyContent:"space-between",
-//     },
- 
-//     padding: theme.spacing(4),
-//       "& button":{
-//           backgroundColor: "#2E0249",
-//           color: "#FFF"
-//       },
-//       "& button: hover":{
-//         backgroundColor: "#F806CC",
-//         color: "#F806CC"
-//       }
-    
-//   },
-//   form:{
-//     textDecoration:"none",
-//     display:"block",
-//     color: "#040303",
-//     [theme.breakpoints.down("sm")]:{
-//    justifyContent:"space-between", 
-//       alignContent:"center",
-    
-//     },
-//    },
-//   sectiondark:{
-//     background : "#7F8487",
-//     color : "#fff",
-  
-//   },
-//   sectioncontent:{
-//      display: "flex",
-//      flexDirection:"column",
-//     // alignItems: "center",
-//      margin: "25px",
-//     // maxWidth: "80vh",
-   
-//   },
- 
-//   boton:{
-//     position:"flex",
-//     zIndex: 999,
-//     marginLeft: "75px",
-//     bottom:"2 rem",
-//     borderRadius:"3px",
-//     [theme.breakpoints.down("sm")]:{
-//         bottom: 10,
-        
-//     },
-//      backgroundColor:"#570A57",
-//      border: "#570A57",
-//      height:"5vh",
-//      width:"10vh",
-//     "& a":{
-//       color: "#7F8487",
-//       textDecoration: "none",
-//       fontWeight: 900,
-//     }
-//    },
-//   input:{
-//     padding: "5px",
-//     margin: "8px",
-//     alignContent:"justify",
-//     height:"5vh",
-//     width:"30vh",
-//     borderRadius: "5px"
-   
-//   },
-//   inputA:{
-//     padding: "3px",
-//     margin: "8px",
-//     alignContent:"center",
-//     height:"5vh",
-//     width:"30vh",
-//     borderRadius: "5px"
-
-//    },
-//   inputM:{
-//     padding: "3px",
-//     margin: "8px",
-//     alignContent:"center",
-//     height:"22vh",
-//     width:"30vh",
-//     borderRadius: "5px"
-//   },
-// }))
 
 export default Contacto;

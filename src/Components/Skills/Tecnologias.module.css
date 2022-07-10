@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Castoro:ital@1&family=Lobster&family=Playball&family=Smooch&family=Updock&family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,700;1,700&family=Castoro:ital@1&family=Lobster&family=Marck+Script&family=Playball&family=Roboto+Mono:wght@300&family=Smooch&family=Updock&family=Viga&display=swap');
 
 .conteiner{
-    font-family: 'Castoro', serif;
+    font-family: 'Roboto Mono', monospace;
     display: flex;
     gap: 20px;
     transform: translate(3.125rem, 6.25rem);
@@ -9,30 +9,36 @@
     flex-direction: column;
     align-content: flex-start;
     justify-items: center;
-    width: 75rem;
+    width: 1100px;
     height: 37.5rem;
-    padding: 0.9375rem;
-    /* margin: 0.9375rem;  */
+    padding: 20px;
     align-content: center;
-    /* background-color: rgba(171, 3, 157, 0.141);  */
 }
 .titulo{
+    font-family: 'Roboto Mono', monospace;
     text-align: center;
     color: aliceblue;
     justify-content:end;
-    width: 950px;
+    width: 1100px;
+    height: 1500px;
+    padding: 80px;
     font-size: 30px;  
+}
+.tit{
+    padding-bottom: 40px;
 }
 .box{
     padding: 20px;
 }
 .img{
     padding: 10px;
-    width: 60px;
+    width:800px;
+    width: 7rem;
+    height: 7.5rem;
     background-image: url();
 }
 .gird {
-    width: 70rem;
+    width: 1100px;
     height: 37.5rem;    
     display: grid;
     grid-template-columns: repeat(3, 2fr);
@@ -45,10 +51,7 @@
     background-image: url('../../Img/Logo/fondo3.jpg');
     border: solid 2px #84078b70;
     border-radius: 10px 100px / 120px;}
-.img{
-    width: 7rem;
-    height: 7.5rem;
-}
+
 .letras{
     padding: 5px;
     width: 13.25rem;
@@ -116,94 +119,163 @@
     
 
 @media (max-width: 600px){
-    .conteiner{
-        width: 15rem;
-        height: 87.5rem;
-        padding: 0.375rem;
-        margin: 0.75rem; 
-    }
-    .titulo{
-        margin-top: 3.1875rem;
-        width:200px;
-        font-size: 1.875rem;  
-    }
-    .box{
-        padding: 2px;
-    }
-     .gird {
-       height: 0.875rem;
-       text-align: center;
-       width: 26.25rem;
-        display: grid;
-        grid-template-columns: repeat(1, 5fr);
-        grid-template-rows: repeat(1,5fr);
-         grid-column-gap: 1.4375rem;    
-       }  
-        
-        .card{
-            display: flex;
-        } 
-       
-        .img{
-            width: 6rem;
-            height: 6rem;
-        }
-        .letras{
-            padding: 9px;
-            width: 11.25rem;
-        }
-         .p{ 
-             margin-left: 0.25rem;
-            font-size: 1rem;
-            width: 12.5rem;
-            height: 2.1875rem;
-            
-        }
 
+    .titulo{
+        margin: auto;
+        font-size: 14px;  
+        width: 400px;
+        height: 77.5rem;
+        padding:0;
+    }
+    .tit{
+        padding-bottom: 10px;
+    }
+    .img{
+        padding: 5px;
+        width:800px;
+        width: 7rem;
+        height: 2.5rem;
+        background-image: url();
+    }
+    .gird {
+        height: 60px;
+        padding-left: 30px;
+        text-align: center;
+        width: 420px;
+         display: grid;
+         grid-template-columns: repeat(1, 5fr);
+         grid-template-rows: repeat(1,5fr);
+          grid-column-gap: 0.4375rem; 
+        }
+    .card{
+        display: flex;
+        background-image: url('../../Img/Logo/fondo3.jpg');
+        border: solid 2px #84078b70;
+        border-radius: 10px 100px / 120px;
+    }
+    .card{
+        display: flex;
+    } 
+   
+    .img{
+        width: 5rem;
+        height: 5rem;
+    }
+    .letras{
+        padding: 7px;
+        width: 220px;
+    }
+     .p{ 
+        margin: auto;
+        font-size: 0.875rem;
+        width: 140px;
+        height: 1.875rem;
+        
+    }
 }
-@media (max-width: 375px){
-    .conteiner{
-        width: 15rem;
-        height: 87.5rem;
-        padding: 0.375rem;
-        margin: 0.75rem; 
-    }
-    .titulo{
-        margin-top: 3.1875rem;
-        margin-left: 4rem;
-        width:8rem;
-        font-size: 0.875rem;  
-    }
-    .box{
-        padding: 2px;
-    }
-     .gird {
-       height: 0.875rem;
-       width: 16.25rem;
-        display: grid;
-        grid-template-columns: repeat(1, 5fr);
-        grid-template-rows: repeat(1,5fr);
-         grid-column-gap: 1.4375rem;    
-       }  
-        
-        .card{
-            display: flex;
-        } 
-       
-        .img{
-            width: 3rem;
-            height: 3rem;
-        }
-        .letras{
-            padding: 3px;
-            width: 11.25rem;
-        }
-         .p{ 
-             margin-left: 0.25rem;
-            font-size: 1rem;
-            width: 7.5rem;
-            height: 2.1875rem;
-            
-        }
+@media (max-width: 420px){
 
+    .titulo{
+        margin: auto;
+        font-size: 14px;  
+        width: 400px;
+        height: 77.5rem;
+        padding:0;
+    }
+    .tit{
+        padding-bottom: 10px;
+    }
+    .img{
+        padding: 5px;
+        width:800px;
+        width: 7rem;
+        height: 2.5rem;
+        background-image: url();
+    }
+    .gird {
+        height: 60px;
+        padding-left: 30px;
+        text-align: center;
+        width: 330px;
+         display: grid;
+         grid-template-columns: repeat(1, 5fr);
+         grid-template-rows: repeat(1,5fr);
+          grid-column-gap: 0.4375rem; 
+        }
+    .card{
+        display: flex;
+        background-image: url('../../Img/Logo/fondo3.jpg');
+        border: solid 2px #84078b70;
+        border-radius: 10px 100px / 120px;
+    }
+    .card{
+        display: flex;
+    } 
+   
+    .img{
+        width: 5rem;
+        height: 5rem;
+    }
+    .letras{
+        padding: 7px;
+        width: 220px;
+    }
+     .p{ 
+        margin: auto;
+        font-size: 0.875rem;
+        width: 140px;
+        height: 1.875rem;
+        
+    }
+}
+@media (max-width: 300px){
+
+    .titulo{
+       margin: auto;
+        font-size: 12px;  
+        width: 250px;
+        height: 77.5rem;
+        padding:0;
+    }
+    .img{
+        padding: 10px;
+        width:800px;
+        width: 7rem;
+        height: 2.5rem;
+        background-image: url();
+    }
+    .gird {
+        height: 40px;
+        text-align: center;
+        width: 90px;
+         display: grid;
+         grid-template-columns: repeat(1, 5fr);
+         grid-template-rows: repeat(1,5fr);
+          grid-column-gap: 0.4375rem; 
+        }
+    .card{
+        display: flex;
+        background-image: url('../../Img/Logo/fondo3.jpg');
+        border: solid 2px #84078b70;
+        border-radius: 10px 100px / 120px;
+    }
+    .card{
+        display: flex;
+    } 
+   
+    .img{
+        width: 3rem;
+        height: 3rem;
+    }
+    .letras{
+        padding: 9px;
+        width: 11.25rem;
+    }
+     .p{ 
+        margin: auto;
+        font-size: 0.875rem;
+        width: 8.5rem;
+        height: 1.875rem;
+        
+    }
 }

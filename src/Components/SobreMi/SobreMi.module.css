@@ -1,10 +1,11 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Castoro:ital@1&family=Lobster&family=Playball&family=Smooch&family=Updock&family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,700;1,700&family=Castoro:ital@1&family=Lobster&family=Marck+Script&family=Playball&family=Roboto+Mono:wght@300&family=Smooch&family=Updock&family=Viga&display=swap');
 
 
 .conteiner{
+    font-family: 'Roboto Mono', monospace;
+
     display: flex;
-    transform: translate(3.125rem, 6.25rem);
     width: 75rem;
     height: 37.5rem;
     padding: 0.9375rem;
@@ -31,14 +32,13 @@
 }
 .card{
     display: block;
-    
     font-size: 1.625rem;
    display:flex ;
     animation-duration: 40s;
     animation-delay: 20s;
     color: aliceblue;
-    font-family: 'Castoro', serif;
-    padding: 1.9375rem;
+    font-family: 'Roboto Mono', monospace;
+    padding: 3.9375rem;
     border-radius: 1.25rem;
     background-color: rgba(137, 43, 226, 0.087);
 }
@@ -46,7 +46,6 @@
     display: flex;
 }
 .parraf2{
-    margin: 0.9375rem;
     text-align: center;
 }
 .button{
@@ -105,28 +104,28 @@
 
 @media (max-width: 600px){
     .conteiner{
-        text-align: center;
-        width: 18.75rem;
+        width: 37.5rem;
+        height: 40.5rem;
+        
+
     }
     .img{
-        width: 12rem;
-        height: 12rem;
-        padding-left: 0.625rem;
+        width: 22rem;
+        height: 14rem;
+        padding-left: 3.25rem;
         align-content: center;
      
     }
     .parraf1{
         display: flex;
-        width: 22em;
-        height: 23.5em;
+        width: 27rem;
+        height: 26.5em;
     }
      .card{
-        text-align: center;
-
         display: block;
         font-size: 0.9rem;
-        width: 30rem;
-        height: 40rem;
+        width: 55.0625rem;
+        height: 35rem;
         animation-duration: 40s;
         animation-delay: 20s;
         border-radius: 1.25rem;
@@ -137,34 +136,67 @@
     }
  
 }
-
-@media (max-width: 375px){
+@media (max-width: 420px){
     .conteiner{
-        width: 16.75rem;
-        margin-top: -3rem;
+        width: 26.25rem;
+        height: 40.5rem;
+    
     }
     .img{
         width: 12rem;
-        height: 12rem;
-        padding-left: 0.625rem;
+        height: 10rem;
+        padding-left: 0.25rem;
         align-content: center;
      
     }
     .parraf1{
         display: flex;
-        width: 17em;
-        height: 23.5em;
+        width: 17rem;
+        height: 26.5em;
     }
      .card{
         display: block;
-
         font-size: 0.8rem;
-        width: 18rem;
-        height: 39rem;
+        width: 24.0625rem;
+        height: 35rem;
         animation-duration: 40s;
         animation-delay: 20s;
         border-radius: 1.25rem;
     } 
+    .button{
+        margin: 1.25rem;
+        padding: 0.75rem;
+    }
+}
+@media (max-width: 300px){
+    .conteiner{
+        width: 18.75rem;
+        height: 46.5rem;
+        
+
+    }
+    .img{
+        width: 12rem;
+        height: 10rem;
+        padding-left: 0.25rem;
+        align-content: center;
+     
+    }
+    .parraf1{
+        display: flex;
+        width: 11rem;
+        height: 26.5em;
+    }
+     .card{
+        display: block;
+        font-size: 0.8rem;
+        width: 265px;
+        height: 45rem;
+        animation-duration: 40s;
+        animation-delay: 20s;
+        border-radius: 1.25rem;
+    } 
+   
     .button{
         margin: 1.25rem;
         padding: 0.75rem;

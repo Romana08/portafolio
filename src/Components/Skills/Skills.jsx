@@ -78,7 +78,7 @@ const Skills = ({ id }) => {
     },
   ];
   return (
-      <div className={style.titulo} >
+      <div className={style.titulo} id= {id}>
         <p className={style.tit}>Estas son mis Skills</p>
       <div className={style.gird}>
         {skillsIcons &&

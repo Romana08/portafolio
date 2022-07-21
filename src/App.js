@@ -1,8 +1,6 @@
-import NavBar from './Components/NavBar/NavBar';
 import "./App.css"; 
 import { SobreMi } from './Components/SobreMi/SobreMi';
 import Skills from './Components/Skills/Skills';
-import MyWork from './Components/MyWork/MyWork';
 import Contacto from './Components/Contacto/Contacto';
 import Portada from './Components/Home/Present/Portada';
 import { MisTrabajos } from './Components/MyWork/MisTrabajos';

@@ -1,8 +1,22 @@
 
 
 .cont {
+    
+text-align: center;
  background-image: url('./Img/Logo/fondo3.jpg');
  background-repeat:no-repeat; 
  background-size: cover; 
- min-height: 120vh; 
+ min-height: 120vh;
+ background-attachment: fixed;
+ background-position: center;
+
 }
+
+
+/* text-align: center;
+background-color: #000;
+color: #fff;
+background-image: url(./img/RojoAbstract-HD-Wallpaper-1080p.jpg);
+background-size: cover;
+background-position: center;
+background-attachment: fixed; */

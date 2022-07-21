@@ -20,7 +20,7 @@ export const MisTrabajos = ({id}) => {
       }
     ]
   return (
-    <div className={style.box}>
+    <div className={style.box} id = {id}>
         <h3 className={style.titulo}>Mis Trabajos</h3>
      {mocData &&
           mocData.map((item) => (

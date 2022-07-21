@@ -102,7 +102,7 @@
 }
     
 
-@media (max-width: 600px){
+@media only screen and (max-width: 600px){
     .conteiner{
         width: 37.5rem;
         height: 40.5rem;
@@ -136,7 +136,7 @@
     }
  
 }
-@media (max-width: 420px){
+@media only screen and(max-width: 420px){
     .conteiner{
         width: 26.25rem;
         height: 40.5rem;
@@ -168,7 +168,7 @@
         padding: 0.75rem;
     }
 }
-@media (max-width: 320px){
+@media only screen and (max-width: 320px){
     .conteiner{
         width: 320px;
         height: 46.5rem;
